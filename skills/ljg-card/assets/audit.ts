@@ -47,7 +47,8 @@ requireThat(skill.includes("`-l` (default)"), "default long mode changed");
 for (const term of [
   "## `-f` font priority",
   "Never download, temporarily install or hot-link a font over the network",
-  "prefers a locally installed classical serif face",
+  "KingHwa_OldSong",
+  "Songti SC",
   "Every editorial piece of text",
   "title, headline",
   "character alignment carries meaning there",
@@ -113,7 +114,7 @@ for (const name of ["long", "comic"]) {
 
 const whiteboardMode = await text(join(root, "references", "mode-whiteboard.md"));
 for (const term of [
-  "`0–4`",
+  "`0-4`",
   "argument ledger",
   "source_sections",
   "must_render",

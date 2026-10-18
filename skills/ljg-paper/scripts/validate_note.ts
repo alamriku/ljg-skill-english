@@ -156,7 +156,10 @@ export function validate(content: string, file: string, paperMap?: string): Resu
   const headingMatches = [...content.matchAll(/^\* ([^*\n].*)$/gm)];
   const headings = headingMatches.map((match) => match[1].trim());
   if (headings.length < 2) errors.push(`at least 2 top-level headings named by an event, change or condition are required; found ${headings.length}`);
-  const genericHits = headings.filter((heading) => genericHeadings.has(heading.replace(/\s+/g, "")));
+  // Normalize by lowercasing and collapsing runs of whitespace. Deleting whitespace
+  // outright would never match a multi-word English label such as "experimental results".
+  const normalizeHeading = (heading: string) => heading.trim().toLowerCase().replace(/\s+/g, " ");
+  const genericHits = headings.filter((heading) => genericHeadings.has(normalizeHeading(heading)));
   if (genericHits.length) errors.push(`top-level headings must not use generic section labels: ${[...new Set(genericHits)].join(", ")}`);
 
   const bodyStart = headingMatches[0]?.index ?? content.length;
@@ -267,7 +270,7 @@ export function validate(content: string, file: string, paperMap?: string): Resu
     const identityAnchors = parseAnchors(lineField(paperMap, "Paper-specific statements in the body"));
     identityAnchorCount = identityAnchors.length;
     if (identityAnchors.length < 2) errors.push(`at least 2 paper-specific statements are required; found ${identityAnchors.length}`);
-    const genericIdentityAnchors = identityAnchors.filter((anchor) => genericAnchors.has(anchor));
+    const genericIdentityAnchors = identityAnchors.filter((anchor) => genericAnchors.has(normalizeHeading(anchor)));
     if (genericIdentityAnchors.length) errors.push(`these paper-specific statements are too generic: ${genericIdentityAnchors.join(", ")}`);
     const missingIdentityAnchors = identityAnchors.filter((anchor) => !body.includes(anchor));
     if (missingIdentityAnchors.length) errors.push(`these paper-specific statements do not appear in the body: ${missingIdentityAnchors.join(", ")}`);

@@ -26,6 +26,7 @@ const SECTION_ONE = [
 const SECTION_TWO = [
   "Picture a delivery schedule. Each possible route becomes a number of minutes, and the search keeps whichever change lowers that number. Nothing in the procedure knows about fuel, fairness or driver fatigue unless those enter the same number.",
   "That is the whole operation: candidates in, one comparable score out, and a direction to move next. Change the score and the same search walks toward a different answer, even though the code never changed.",
+  "Nothing about that is hidden, but it is easy to miss, because the number arrives looking like a fact about the routes rather than a choice someone made about what to count.",
 ].join("\n\n");
 
 const SECTION_THREE = [

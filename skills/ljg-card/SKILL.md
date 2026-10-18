@@ -47,7 +47,7 @@ When `-l` or `-w` is explaining knowledge, read `references/learning-design.md` 
 
 ## `-f` font priority
 
-Every editorial piece of text in `-f` prefers a locally installed classical serif face - title, headline, section headings, body, emphasis, captions, table headers and byline - so that the whole long card keeps one typographic character. When the browser cannot find it, the body falls back to a serif stack and the display text to a system sans stack. Never download, temporarily install or hot-link a font over the network to make a card. `code`, `pre` and the source line keep a monospace face, because character alignment carries meaning there.
+Every editorial piece of text in `-f` prefers the locally installed `KingHwa_OldSong` - title, headline, section headings, body, emphasis, captions, table headers and byline - so that the whole long card keeps one typographic character. When the browser cannot find it, the body falls back to `Songti SC`, `STSong`, `Noto Serif CJK SC` and `serif`, and the display text to `PingFang SC`, `Hiragino Sans GB`, `Microsoft YaHei` and the system sans. Never download, temporarily install or hot-link a font over the network to make a card. `code`, `pre` and the source line keep a monospace face, because character alignment carries meaning there.
 
 ## `-f` long-reading surface
 

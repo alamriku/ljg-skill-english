@@ -142,7 +142,10 @@ describe("validate ljg-book note", () => {
   for (const count of [1, 2, 5]) {
     test(`accepts ${count} content-led heading(s)`, () => {
       const headings = Array.from({ length: count }, (_, i) => `A turn the body actually takes, number ${i + 1}`);
-      expect(validate(note({ headings }), filename, coverage({ anchors: "A turn the body actually takes" })).errors).toEqual([]);
+      // Anchors must be present at every heading count, so they are drawn from the
+      // first section and the heading text, which all counts render.
+      const anchors = "Four sentences sit in front of Lee|nods along with the alarm in the first three|A turn the body actually takes";
+      expect(validate(note({ headings }), filename, coverage({ anchors })).errors).toEqual([]);
     });
   }
 

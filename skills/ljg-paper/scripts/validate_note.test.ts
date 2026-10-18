@@ -336,9 +336,11 @@ describe("version 3 evidence-based writing rules", () => {
     );
     const map = validMap
       .replace(/^- Are diagrams needed: .*$/m, "- Are diagrams needed: yes - two different relations")
-      .replace(/^- Which example explains each diagram: .*$/m, "- Which example explains each diagram: checkout request | skill library");
+      // Each carrier must appear in the text that follows its own diagram, so the
+      // second one is named from the sentence after the second figure.
+      .replace(/^- Which example explains each diagram: .*$/m, "- Which example explains each diagram: checkout request | A larger library");
     expect(validate(note, filename, map).errors).toEqual([]);
-    expect(validate(note, filename, map.replace("checkout request | skill library", "skill library | checkout request")).ok).toBe(false);
+    expect(validate(note, filename, map.replace("checkout request | A larger library", "A larger library | checkout request")).ok).toBe(false);
   });
 
   test("an interrupted source inspection cannot become a deliverable", () => {

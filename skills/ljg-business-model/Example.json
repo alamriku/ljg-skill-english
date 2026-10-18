@@ -1,0 +1,47 @@
+{
+  "title": "Neighbourhood Coffee Subscription",
+  "scope": "Fictional example - monthly subscription at a community shop",
+  "date": "2026-10-08",
+  "version": "example v1.0",
+  "summary": "Local residents subscribe monthly for their everyday coffee, collected in store, giving the shop recurring subscription revenue.",
+  "sources": [{ "id": "S1", "label": "Fictional project description, for demonstration only", "detail": "Fictional case: a community coffee shop offers a prepaid subscription of 20 cups a month for a flat monthly fee. It targets residents within a ten-minute walk who drink coffee at least three times a week. A small app handles subscribing, reserving a cup and checking the remaining balance; collection is in store, and the rule for unused cups is undecided. Customers come from in-store tastings and resident referrals, a community group collects feedback, and staff handle after-sales. A roaster supplies the beans and a payment provider settles the money. The shop has a street-front unit, an espresso machine, baristas and the app. Daily work is preparing and making the coffee, maintaining the reservation system and following up on member feedback. Costs include rent and wages, beans, milk and packaging, and payment fees. No renewal or margin data was provided." }],
+  "segments": [{ "id": "C1", "label": "Nearby everyday coffee drinkers" }],
+  "blocks": {
+    "customer_segments": [
+      { "text": "Residents within a ten-minute walk", "status": "given", "source_refs": ["S1"], "segment": "C1" },
+      { "text": "Drink coffee 3+ times a week; the user pays for themselves", "status": "given", "source_refs": ["S1"], "segment": "C1" }
+    ],
+    "value_propositions": [
+      { "text": "Subscribe monthly for everyday coffee, collected nearby", "status": "given", "source_refs": ["S1"], "segment": "C1" },
+      { "text": "Reserving ahead may cut the morning-rush wait", "status": "inferred", "source_refs": ["S1"], "segment": "C1", "reason": "The reservation feature may help schedule production; no data on actual queueing or waiting times was provided." }
+    ],
+    "channels": [
+      { "text": "In-store tastings and resident referrals bring customers in", "status": "given", "source_refs": ["S1"] },
+      { "text": "App for subscribing and reserving; collection in store", "status": "given", "source_refs": ["S1"], "segment": "C1" }
+    ],
+    "customer_relationships": [
+      { "text": "Community group collects feedback; staff handle after-sales", "status": "given", "source_refs": ["S1"] },
+      { "text": "Self-service: check the remaining cups in the app", "status": "given", "source_refs": ["S1"] }
+    ],
+    "revenue_streams": [
+      { "text": "Residents prepay a flat monthly fee covering 20 cups", "status": "given", "source_refs": ["S1"], "segment": "C1" },
+      { "text": "Treatment of unused cups: to be clarified", "status": "unknown" }
+    ],
+    "key_resources": [
+      { "text": "Street-front unit, espresso machine, baristas", "status": "given", "source_refs": ["S1"] },
+      { "text": "Subscription and reservation app", "status": "given", "source_refs": ["S1"] }
+    ],
+    "key_activities": [
+      { "text": "Daily prep, making and handing over the coffee", "status": "given", "source_refs": ["S1"] },
+      { "text": "Maintaining the reservation system, following up on feedback", "status": "given", "source_refs": ["S1"] }
+    ],
+    "key_partners": [
+      { "text": "Roaster: steady supply of beans", "status": "given", "source_refs": ["S1"] },
+      { "text": "Payment provider: collection and settlement", "status": "given", "source_refs": ["S1"] }
+    ],
+    "cost_structure": [
+      { "text": "Fixed: rent and staff wages", "status": "given", "source_refs": ["S1"] },
+      { "text": "Scales with cups: beans, milk, packaging; plus payment fees", "status": "given", "source_refs": ["S1"] }
+    ]
+  }
+}

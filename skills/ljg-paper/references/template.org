@@ -1,0 +1,35 @@
+#+title:      {one sentence stating which understanding this paper changes}
+#+subtitle:   {the paper's original title; add a gloss if needed}
+#+description: {write after the body: what existing methods lack, the main contribution, the key findings and their scope}
+#+date:       [{YYYY-MM-DD Day HH:MM}]
+#+filetags:   :paper:
+#+identifier: {YYYYMMDDTHHMMSS}
+#+source:     {the single original URL or absolute local path, with no added description}
+#+authors:    {author list}
+#+venue:      {venue and year}
+
+{Write using ReadingGuide.md, and keep a separate paper-map research record. Delete every brace prompt from this template. The blocks below describe what each part does; they are not a fixed table of contents - the number of sections and the organization follow the paper.}
+
+* {the specific question the opening answers, or the phenomenon to be explained}
+
+{Let the reader see where the problem comes from and how it is usually handled or judged. Use a case, a result or a doubt the paper supports to show where the existing understanding falls short; you may also start straight from the research question without inventing a scene. An invented illustration says what it is, naturally, and keeps the key relations that match the paper.}
+
+{By the end of the first two sections the reader should know the object of study, what existing methods lack, what the authors propose, and should be starting to follow the approach. When the paper has several necessary threads, say how they jointly form the contribution.}
+
+* {what the authors' method, relation or finding actually changed}
+
+{Explain the key steps or acting relations, showing how input, processing and result connect. Explain a term where it first appears, and show how it works through the current example or another one. When you change examples, say which layer of the explanation the new one adds.}
+
+{Before a key result, state the experiment's question, conditions and comparison; afterwards, explain what the result means and what limits it. Explain the most representative result first; other results may stay when they add different information, limit the conclusion or explain an exception, with the reason recorded in the research record - there is no fixed count of numbers.}
+
+{Add sections as the explanation requires. They may progress or sit side by side; say why each is necessary and how it connects to the overall question. Never invent a causal link just to make the sections unswappable.}
+
+{Put a figure where the reader needs it. ASCII diagrams go in an Org example block no wider than 80 display columns; after each diagram, walk a concrete example through the process and the result.}
+
+* {changed conditions, counterexamples, or what remains unsolved}
+
+{Use condition changes, failure cases or arguments the paper actually tested to state the scope. Keep predictions and measurements apart; where a condition was never validated, write it as unknown rather than completing the authors' results for them. Without a unified mechanism, say how the findings relate and what limits each one.}
+
+{Return to the opening question and use one short paragraph to say how the reader now understands or judges it. Ground it in what came before; add no new evidence, terms or recommendations, and do not force the paper into correcting a misconception it never raised.}
+
+{Before delivery: check against the source and the research record, run the validation script, check Denote and org-lint in a real Emacs, then complete the independent reading check. Write the actual answers and the four verdicts back into the paper-map and re-validate. Report every failed or unrunnable item honestly.}

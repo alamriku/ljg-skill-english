@@ -1,0 +1,4 @@
+interface:
+  display_name: "ljg-analogy - Structural analogy"
+  short_description: "Finds precise analogies for scenarios and for the difference between two objects, preserving the key relations, the gain in understanding and the limits of transfer"
+  default_prompt: "Use $ljg-analogy to find a precise analogy for the scenario I give, or for the difference between the two, lighting up the key relation."

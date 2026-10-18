@@ -1,0 +1,90 @@
+#+TITLE: Book breakdown: A Rulebook for Arguments
+#+SUBTITLE: Anthony Weston | From a few sentences of reasons to an essay and a talk that hold up
+#+DESCRIPTION: A handbook of nine chapters, forty-five rules and two appendices. Starting from the crowded swimming pool, and passing through Holmes, election polling, the student exchange proposal and the discussion of extraterrestrial life, it explains how examples, analogy, sources, causation and deduction support a conclusion, then moves on to extended arguments, writing and speaking; it ends by showing that neither definitions nor delivery can stand in for a proof that has not been completed.
+#+DATE: [2000-01-01 Sat 00:00]
+#+FILETAGS: :book:thinking:
+#+IDENTIFIER: 20000101T000002
+
+* The pool is crowded, so should we build more
+
+The weekend pool is packed. People who came to swim cannot get a lane, and people who brought children find it awkward. Someone proposes that the city should build more pools.
+
+The suggestion is easy to nod along to. The pools are insufficient, so add pools; it serves residents and may genuinely ease the crowding. When Weston raises the Durham pool example, this is the kind of fairly direct inference he is examining.
+
+The book's first chapter is about short arguments: identify the conclusion, identify the premises, present them in a natural order, start from reliable premises, be concrete and concise, keep the key terms consistent, and use one term for one thing. On the pool suggestion, applying them means separating what is being claimed from what is doing the supporting, and then asking whether the support is enough.
+
+Chapter one also warns against two habits. One is to restate the conclusion in stronger words and call it a reason. The other is to let the key term drift, so that "crowded" in the first sentence and "crowded" in the last are not the same measurement.
+
+* What exactly does Holmes say that we do not
+
+Chapter two is about arguments by example, and the book reaches for Sherlock Holmes.
+
+What Holmes does is not magic. He names the observation, names what it would take for the observation to mean what he says, and then says the conclusion. The ordinary version of the same move skips the middle step and sounds like intuition.
+
+Weston's rules for examples follow: more than one example; representative examples; background rates matter; counterexamples have to be looked for rather than waited for. An example establishes that something can happen. How often, and for whom, is a separate question.
+
+* Two million votes and you can still misread the public
+
+Chapter two continues into polling, and the number is deliberately large.
+
+A sample of over two million can still be wrong about a population if of the people invited, the ones who answer differ systematically from the ones who do not. Size does not repair a sample that was drawn from the wrong place.
+
+This is where the book insists on asking how the material was produced. The figure is not the evidence; the figure plus how it was gathered is the evidence.
+
+* Why "discovering" Italy makes the America question clearer
+
+Chapter three is analogy, and Weston uses a deliberately odd pairing: what would it mean to say that an Italian explorer "discovered" America?
+
+Reversed - imagine someone sailing the other way and "discovering" Italy - the word shows what it had been smuggling: a point of view from which the people already there do not count as having found the place.
+
+That is what an analogy is for in this book. It does not prove the conclusion. It relocates a case to where the relevant relation is easier to see, and then you check whether the relation really is the same one.
+
+* Others know more than I do, so how far should I trust them
+
+Chapter four is sources. Most of what anyone believes is borrowed, so the question is not whether to rely on others but when.
+
+Weston's rules: cite sources; prefer informed sources; look for impartiality; cross-check; and treat internet sources with the same demands rather than more or fewer. Expertise is in a field, not in general, and an interest in the outcome is a reason to check rather than a reason to dismiss.
+
+* Does sitting in the front row raise your grades
+
+Chapter five is causal argument, and the example is the correlation between where students sit and how they do.
+
+The correlation is real and the causal story is not settled by it. Students who already engage may choose the front row; a third factor may produce both. The book's rules ask for the process to be explained, for alternative explanations to be stated, and for the direction to be checked rather than assumed.
+
+Correlation does imply something - that there is something to explain. What it does not imply is which explanation is right.
+
+* Valid form, and the premises can still be wrong
+
+Chapter six is deduction: modus ponens, modus tollens, hypothetical syllogism, disjunctive syllogism, dilemma and reductio.
+
+The chapter's point is narrow and important. A valid form guarantees that if the premises are true the conclusion is true. It guarantees nothing about whether the premises are true. Most real disagreements are about the premises, which is why the earlier chapters took so long.
+
+* Sending students abroad means proving a whole chain
+
+Chapter seven turns to extended arguments, and the running case is the student exchange proposal.
+
+Here the short-argument tools are used in sequence: the main claim is broken into the claims that support it, each one is given its own argument, objections are stated and answered, and alternatives are considered. The chain is long: exchange produces understanding; understanding produces cooperation; the benefit justifies the cost; the programme is better than the alternatives.
+
+The chapter also develops the safety objection, and notes that meeting it changes what is being proposed rather than merely defending it.
+
+* Why we keep finding planets but not life
+
+Chapter seven's second case is extraterrestrial life, and it is instructive because the chain ends somewhere different.
+
+Many stars, many planets, some in a habitable range: each step can be supported, and together they support "possible". Nothing in the chain supports "found". The argument is honest precisely where it stops.
+
+* Write it up, then say it to the people in front of you
+
+Chapters eight and nine are the essay and the spoken talk.
+
+The essay chapter asks you to state the main point, work out the structure, take up objections, and avoid the throat-clearing that stands in for an argument. The speaking chapter adds the constraints of a listener who cannot reread: carry the structure in the voice, keep the examples few, and state the objection fairly.
+
+* What you call it does not settle how to treat it
+
+Appendix I is fallacies and Appendix II is definitions.
+
+The definitions appendix makes the book's closing point. A definition can tell both sides what is under discussion. It cannot settle whether the thing is good, whether a policy works, or what should be done about it. Writing the desired conclusion into the definition only hides the proof that was never given.
+
+* What stays with you afterwards
+
+Across the pool, Holmes, the polls, the exchange programme and the search for life, Weston keeps making the same demand: say which sentence is doing the supporting, show where that support came from, and stop where the support stops - because a conclusion is only worth as much as the reasons you can actually hand over for someone else to check.

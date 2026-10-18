@@ -1,0 +1,464 @@
+{
+  "title": "Compatibility regression",
+  "mode": "faithful",
+  "sources": [
+    {
+      "id": "SRC-1",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "choose"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-2",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "prices $20/month and $200/month"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-3",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "$$x^2 \\cdot y_1$$"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-4",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "read the material"
+              }
+            ]
+          },
+          {
+            "chunks": [
+              {
+                "t": "compare explanations"
+              }
+            ]
+          },
+          {
+            "chunks": [
+              {
+                "t": "return to the evidence"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-5",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "The same record can be read again."
+              }
+            ]
+          },
+          {
+            "chunks": [
+              {
+                "t": "A new explanation still has to return to the evidence."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-6",
+      "content": {
+        "pre": "function add(a, b) {\n  return a + b;\n}\n\n+-----+\n|code |\n+-----+"
+      }
+    },
+    {
+      "id": "SRC-7",
+      "content": {
+        "table": {
+          "header": false,
+          "rows": [
+            [
+              "A",
+              "independent record"
+            ],
+            [
+              "B",
+              "supplementary record"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-8",
+      "content": {
+        "chart": {
+          "kind": "bar",
+          "title": "illustrative difference",
+          "unit": "units",
+          "items": [
+            {
+              "label": "A",
+              "value": -2
+            },
+            {
+              "label": "B",
+              "value": 0
+            },
+            {
+              "label": "C",
+              "value": 3,
+              "emphasis": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-9",
+      "content": {
+        "chart": {
+          "kind": "line",
+          "title": "illustrative change",
+          "items": [
+            {
+              "label": "day 1",
+              "x": 1,
+              "value": 2
+            },
+            {
+              "label": "day 2",
+              "x": 2,
+              "value": 3
+            },
+            {
+              "label": "day 5",
+              "x": 5,
+              "value": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-10",
+      "content": {
+        "chart": {
+          "kind": "flow",
+          "title": "from result to use",
+          "items": [
+            {
+              "label": "generate"
+            },
+            {
+              "label": "verify"
+            },
+            {
+              "label": "use"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-11",
+      "content": {
+        "pre": "<script> & <svg>\nhttps://example.com\nfetch(\"literal text\")"
+      }
+    },
+    {
+      "id": "SRC-continuation",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "First sentence. Second sentence."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "slides": [
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "choose"
+            }
+          ]
+        }
+      ],
+      "notes": "short semantic atom",
+      "sourceIds": [
+        "SRC-1"
+      ]
+    },
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "prices $20/month and $200/month"
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-2"
+      ]
+    },
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "$$x^2 \\cdot y_1$$"
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-3"
+      ]
+    },
+    {
+      "role": "sequence",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "read the material"
+            }
+          ]
+        },
+        {
+          "chunks": [
+            {
+              "t": "compare explanations"
+            }
+          ]
+        },
+        {
+          "chunks": [
+            {
+              "t": "return to the evidence"
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-4"
+      ]
+    },
+    {
+      "role": "quotation",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "The same record can be read again."
+            }
+          ]
+        },
+        {
+          "chunks": [
+            {
+              "t": "A new explanation still has to return to the evidence."
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-5"
+      ]
+    },
+    {
+      "role": "evidence",
+      "pre": "function add(a, b) {\n  return a + b;\n}\n\n+-----+\n|code |\n+-----+",
+      "sourceIds": [
+        "SRC-6"
+      ]
+    },
+    {
+      "role": "evidence",
+      "table": {
+        "header": false,
+        "rows": [
+          [
+            "A",
+            "independent record"
+          ],
+          [
+            "B",
+            "supplementary record"
+          ]
+        ]
+      },
+      "sourceIds": [
+        "SRC-7"
+      ]
+    },
+    {
+      "role": "chart",
+      "chart": {
+        "kind": "bar",
+        "title": "illustrative difference",
+        "unit": "units",
+        "items": [
+          {
+            "label": "A",
+            "value": -2
+          },
+          {
+            "label": "B",
+            "value": 0
+          },
+          {
+            "label": "C",
+            "value": 3,
+            "emphasis": true
+          }
+        ]
+      },
+      "sourceIds": [
+        "SRC-8"
+      ]
+    },
+    {
+      "role": "chart",
+      "chart": {
+        "kind": "line",
+        "title": "illustrative change",
+        "items": [
+          {
+            "label": "day 1",
+            "x": 1,
+            "value": 2
+          },
+          {
+            "label": "day 2",
+            "x": 2,
+            "value": 3
+          },
+          {
+            "label": "day 5",
+            "x": 5,
+            "value": 1
+          }
+        ]
+      },
+      "sourceIds": [
+        "SRC-9"
+      ]
+    },
+    {
+      "role": "chart",
+      "chart": {
+        "kind": "flow",
+        "title": "from result to use",
+        "items": [
+          {
+            "label": "generate"
+          },
+          {
+            "label": "verify"
+          },
+          {
+            "label": "use"
+          }
+        ]
+      },
+      "sourceIds": [
+        "SRC-10"
+      ]
+    },
+    {
+      "role": "evidence",
+      "pre": "<script> & <svg>\nhttps://example.com\nfetch(\"literal text\")",
+      "sourceIds": [
+        "SRC-11"
+      ]
+    },
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "First sentence."
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-continuation"
+      ],
+      "sourceParts": [
+        {
+          "id": "SRC-continuation",
+          "index": 1,
+          "total": 2,
+          "joinBefore": ""
+        }
+      ]
+    },
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "Second sentence."
+            }
+          ]
+        }
+      ],
+      "sourceIds": [
+        "SRC-continuation"
+      ],
+      "sourceParts": [
+        {
+          "id": "SRC-continuation",
+          "index": 2,
+          "total": 2,
+          "joinBefore": ""
+        }
+      ]
+    }
+  ]
+}

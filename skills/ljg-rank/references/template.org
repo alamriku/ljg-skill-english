@@ -1,0 +1,4 @@
+#+title:      Rank of {field}
+#+date:       [{YYYY-MM-DD Day HH:MM}]
+#+filetags:   :rank:
+#+identifier: {YYYYMMDDTHHMMSS}

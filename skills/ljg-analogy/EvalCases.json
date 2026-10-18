@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "purpose": "Behavioural cases for human review of actual answers; not scored against fixed wording or one correct base domain. New comparison cases should check discriminating power and transfer judgment, not merely whether a term appears. Product cases use the fact snapshot given inside the case and must not be treated as live product documentation.",
+  "cases": [
+    {
+      "id": "handoff_without_learning",
+      "prompt": "I have AI write my articles and I just pick the results I like. Delivery keeps getting faster, but without AI I now find it harder than before to write my own ideas clearly. Give me a sharp analogy.",
+      "checks": ["keeps the tension between better delivery and declining independent capability", "gives a concrete, understandable base domain with stable relational correspondences", "if less practice is offered as the cause of the change in ability, marks it as an explanation still to be tested rather than known causation", "the boundary separates outsourcing a task from keeping active practice"]
+    },
+    {
+      "id": "asymmetric_judgment",
+      "prompt": "A set of rules counts people's bad behaviour as personal responsibility and good outcomes as credit to the rules. Help me find a strong analogy.",
+      "checks": ["keeps the asymmetric structure where favourable and unfavourable outcomes are assigned to different agents", "is not merely an insult using a negative label such as a crooked referee", "does not add malicious intent by the rule-makers as established fact", "delivers one main analogy and says which blind spot it lights up"]
+    },
+    {
+      "id": "noncausal_spatial",
+      "prompt": "I want to describe two friends: each has their own life and they meet only at a few fixed places, yet those intersections keep them connected. Find a spatial analogy, no causal analysis.",
+      "checks": ["respects the spatial relational focus and does not force a causal chain", "keeps independence and local intersection true at the same time", "the base domain is concrete and imaginable, not abstract topology vocabulary"]
+    },
+    {
+      "id": "literary_one_sentence",
+      "prompt": "After years away from home, one phrase in the old accent makes me feel someone is waiting for me. Just one metaphor.",
+      "checks": ["outputs a single finished line with no analysis or review fields", "contains a perceptible image where sound triggers belonging or waiting", "does not claim someone really is waiting somewhere, and invents no personal experience"]
+    },
+    {
+      "id": "missing_scene",
+      "prompt": "Platform. Find me a sharp analogy.",
+      "checks": ["asks one short question that would pin down the scenario or the relational focus", "does not assume an online platform, a railway platform, or a two-sided market on its own", "does not first output a long list of generic analogies"]
+    },
+    {
+      "id": "analogy_is_not_proof",
+      "prompt": "I think a company is like an organism, so cutting underperforming staff is removing cancer cells and must be good for everyone. Help me make this analogy more persuasive.",
+      "checks": ["does not upgrade a biological process into evidence that layoffs are necessarily beneficial or legitimate", "points out that people's interests and organizational goals cannot be equated through a cell metaphor", "may offer an alternative analogy with a clear scope, or narrow the original one", "does not dehumanize employees as a disease or assert consequences that were never given"]
+    },
+    {
+      "id": "constraint_not_balance_cliche",
+      "prompt": "Moderators are told not to let a single bad message through, and also never to hit a legitimate post by mistake. The rules keep multiplying, yet the two requirements keep getting harder to satisfy at once. Find an analogy for a general reader.",
+      "checks": ["keeps one screening action facing both misses and false positives", "exposes the concrete constraint: the threshold, the information actually distinguishable, or conflicting rules", "says more than 'both sides need balance'", "does not conclude that every additional rule must be useless"]
+    },
+    {
+      "id": "paired_project_coordination",
+      "prompt": "Use an analogy to explain the difference between a session-oriented project workspace and a coordinator-oriented project workspace. Here is the fact snapshot for this case, no internet needed: both can use shared material, edit files and complete tasks. The first organizes related but independent sessions together, and the user opens a new session per task; the second takes requests in one continuing main conversation, where a coordinator opens or resumes task threads, tracks the work and receives results, each thread having its own context. The reader is just starting with both kinds of project.",
+      "checks": ["uses one shared relational frame to keep the difference between many independent entry points and one main conversation that routes work", "does not make editing files and reading material the main difference", "the analogy helps the reader judge where to send a new request and who coordinates", "does not describe the main conversation receiving reports as all thread messages mixed together verbatim", "does not require a forum, chat tool or any specific vehicle"]
+    },
+    {
+      "id": "paired_backup_behavior",
+      "prompt": "Two tools both claim to protect files. A keeps a mirror identical to the original directory, syncing additions, changes and deletions. B periodically keeps several historical versions, so an earlier version can be retrieved. Explain the difference with an analogy an ordinary person can follow. Explain only from the facts given.",
+      "checks": ["both sides map onto one set of relations about current state and retained history", "does not simply label A safe and B fast", "from the analogy one can tell what differs after an accidental deletion or edit", "does not promise that B always has every version or zero data loss", "requires no particular domain; a familiar and accurate near-domain correspondence may win"]
+    },
+    {
+      "id": "same_object_different_questions",
+      "prompt": "A shared record lets many people edit at once and everyone sees the latest content immediately; any edit overwrites the previous content and the system keeps no history. Find an analogy for two different readers: one wants to understand how this helps collaboration, the other wants to understand why it is hard to trace responsibility afterwards. Two or three sentences each.",
+      "checks": ["the same object keeps different load-bearing relations for the two understanding tasks", "the collaboration explanation includes shared state and immediate updates", "the accountability explanation includes overwriting and the unrecoverable past state", "does not reuse one figure with only the positive or negative adjectives swapped", "invents no unstated facts such as permissions or audit mechanisms"]
+    },
+    {
+      "id": "new_evidence_reopens_mapping",
+      "prompt": "I had been comparing reporting system A to a scheduled shuttle bus and reporting system B to a taxi you can call any time. Then I got the full rules for the current version: both run in batches at fixed times every day; A only produces preset reports, while B composes its processing steps from the analysis questions users submitted in that batch and generates a report. What the reader needs now is how to choose between them and how to submit a request. Update the main analogy.",
+      "checks": ["retracts the on-demand correspondence that the new facts overturned", "the new main analogy keeps the difference between fixed output and processing organized around the request", "does not keep the original main analogy and patch an exception onto the end", "lets the reader see how each side handles a new analysis question", "invents no instant runs, prices, speeds, or a claim that every analysis question can be answered"]
+    }
+  ]
+}

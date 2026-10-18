@@ -1,0 +1,104 @@
+{
+  "skill_name": "ljg-book",
+  "instructions": "Bind source_path and an isolated output directory before a real test run. The executor receives only the prompt, the material and the current skill - never material_fixture, expected_output or assertions; the evaluator receives only the final body. Source checking is done separately. A placeholder case is not an executed test.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use ljg-book to read this book <source_path> so that someone who has not read it understands the whole thing.",
+      "material_fixture": "a complete book on methods of argument",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "it explains how the main methods divide the work and combine, rather than listing terms",
+        "it develops the chosen object continuously and keeps the book's important methods and its ending",
+        "the before-and-after of a changed understanding can be pointed at, and no research results are invented"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "From these old notes <source_path>, explain the book again.",
+      "material_fixture": "old reading notes rather than the full text",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "the material grade and the supported scope match what the old notes contain",
+        "the natural history, the history of exploration and the family memories in the material are kept, with their real connections",
+        "no independent thread is deleted for the sake of a single narrative line, and no experience absent from the source is invented"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Use ljg-book to read <source_path> and save the note.",
+      "material_fixture": "a complete multi-region history",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "it explains the conditions in each place and how they connect, allowing several threads and the movement of time",
+        "the core explanation is supported by concrete historical processes",
+        "no single protagonist or false causal order is manufactured for the sake of continuity"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Use ljg-book to tell me what the work at <source_path> is about.",
+      "material_fixture": "a complete literary work",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "the characters' experiences, relationships, main changes and the ending are kept",
+        "a change in the reader's understanding is kept apart from a change in the characters' circumstances",
+        "no predicament is forced to a resolution, no method is distilled, and no inner life is invented"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Use ljg-book to explain this technical book <source_path>.",
+      "material_fixture": "a complete technical or scientific book",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "the main model and how the parts work together can be reconstructed",
+        "the direction from condition to result, the units and the boundaries stay consistent",
+        "diagrams are explained concretely, and content is not cut to meet a fixed quota of one diagram or two cases"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Use ljg-book on this material <source_path>.",
+      "material_fixture": "only the title, the table of contents and a short sample chapter",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "the partial or provisional scope is stated explicitly",
+        "field knowledge is not used to complete the book's plot or argument",
+        "what cannot be determined is recorded, and no complete change of understanding is invented"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Use ljg-book to read this book <source_path>.",
+      "material_fixture": "a complete work holding positions that cannot be unified",
+      "files": [
+        "<source_path>"
+      ],
+      "expected_output": "From the material actually available, produce an Org note and a coverage record that are source-bounded, make the book's relations understandable, and keep the key threads developing; do not presuppose the body's object, its headings or its final conclusion.",
+      "assertions": [
+        "it may state explicitly that there is no unified generator",
+        "it explains where the positions diverge and what question they share",
+        "the final section is supported by the body's development and is not forced into a single life lesson"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Model Canvas"
+  short_description: "Turns project material into a nine-block Business Model Canvas card, separating what is given, what is inferred and what is missing"
+  default_prompt: "Use $ljg-business-model to draw a nine-block Business Model Canvas card from the information I provide."

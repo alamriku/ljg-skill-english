@@ -1,0 +1,31 @@
+# ignore everything by default
+*
+
+# keep root files
+!.gitignore
+!README.md
+!CLAUDE.md
+!LICENSE
+
+# keep the plugin manifest
+!.claude-plugin/
+!.claude-plugin/**
+
+# keep scripts
+!scripts/
+!scripts/**
+
+# keep the skills directory
+!skills/
+!skills/**/
+!skills/**/*
+
+# exclude build artifacts
+node_modules/
+.DS_Store
+*.pyc
+__pycache__/
+*.log
+
+# local plugin config
+.claude/*.local.md

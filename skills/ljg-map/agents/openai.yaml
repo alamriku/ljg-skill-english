@@ -1,0 +1,4 @@
+interface:
+  display_name: "ljg-map - Formal thinking map"
+  short_description: "Reads a text's concepts and links through a learning-theory lens and draws a readable knowledge map from the content itself"
+  default_prompt: "Use $ljg-map to turn this text into a plain-language formal thinking map, giving each node a definition, a short formula and concrete semantics."

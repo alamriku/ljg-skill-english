@@ -1,0 +1,18 @@
+{
+  "skill_name": "ljg-book",
+  "purpose": "Compare the reading continuity of two real artifacts, independently of the file-structure validation; it cannot serve as proof of generation quality.",
+  "provenance": "Two model-generated readings of the same book: a locally kept first-pass draft and a rewrite, with the order of creation hidden. The first artifact was reported as broken reading by a real reader; the first-pass fixture comes from the kept copy and carries no later reading marks. Personal paths and real task identifiers have been removed.",
+  "files": [
+    "20000101T000001--reading-a__book.org",
+    "20000101T000002--reading-b__book.org"
+  ],
+  "prompt": "Read each body on its own and, from what is actually developed there, paraphrase the book's core understanding, how the parts relate and the author's concern; then locate the paragraphs where you have to supply a relation yourself, where the object changes too early, where a change of claim is not made concrete, where the text retreats into a blurb or a note on its arrangement, and where the close is repeated. Then compare. Every switch must be justified by what it does for the understanding at hand, and necessary attribution and material boundaries are not to be cut as mere tour-guiding. The authenticity of an unknown source cannot be declared sound from the body alone.",
+  "presentation": "Do not give the evaluator the order of creation, user feedback or a preferred label; swap the A/B presentation order and recheck, recording any disagreement.",
+  "assertions": [
+    "the reasons for the comparison land on specific paragraphs, not on length, example count, stylistic taste or labels",
+    "it distinguishes reconstructing the relations from the body from copying an overview paragraph, and points at what was actually developed",
+    "it distinguishes background that advances understanding from a book tour that interrupts the current question",
+    "it can say whether a change of claim was concretely shown",
+    "where each draft has its own strengths, it says so for each, presupposing that neither is wholly right"
+  ]
+}

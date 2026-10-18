@@ -1,0 +1,22 @@
+#+TITLE: Book breakdown: {title}
+#+SUBTITLE: {author} | {the book's specific content and how its threads connect}
+#+DESCRIPTION: {fill in after the body: the genre, the object, the starting point and main change, the ending and what remains open}
+#+DATE: [{YYYY-MM-DD Day HH:MM}]
+#+FILETAGS: :book:{field}:
+#+IDENTIFIER: {YYYYMMDDTHHMMSS}
+
+# The headings only suggest positions; add or remove them to follow the book and the reading. Delete this comment and every placeholder prompt, and do not expand each paragraph into a fixed procedure.
+
+* {the concrete situation or question the reader is facing}
+
+{Let an existing understanding have its reasons, then develop it along the book's material. Within the first two top-level headings, let the reader recognize the book's object and its necessary threads from the questions, people and relations already developed.}
+
+* {what changes for the original question}
+
+{The same person, question or model may keep developing. Write the concrete difference before and after: how the material, the conditions and the consequences change the earlier judgment. Develop a necessary new thread fully and explain how it connects to the concern already raised. Where a diagram is needed, use the content after it to say how to read it; do not lay cases and terms out as a list.}
+
+{Add further content as needed. The body returns to the opening and says how it is now understood; do not re-summarize the whole system just before the final section.}
+
+* What stays with you afterwards
+
+{One short paragraph gathering the understanding the body already formed, adding no new lesson. The detailed requirements are in SKILL.md.}

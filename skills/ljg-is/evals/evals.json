@@ -1,0 +1,23 @@
+{
+  "skill_name": "ljg-is",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "[$ljg-is] objective function",
+      "expected_output": "An ordinary reader can tell an objective function apart from a constraint or a metric, restate how it makes candidate solutions comparable, and use that to check what a claimed optimum actually optimized; no invented social counter-pressure or open questions.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "[$ljg-is] performance review",
+      "expected_output": "First make clear what a performance review is and how it connects a judgment about work to later decisions, then derive from the real mechanism how it shapes which work people choose, and what to check when designing or taking part in one.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "[$ljg-is] recursion - I know people say it means a function calling itself, but I still do not get what it really is, or how to decide when to use it in code.",
+      "expected_output": "Separate a recursive definition from the surface appearance of a function calling itself, explain how the problem shrinks into a sub-problem of the same shape and reaches the base case, and end with a concrete judgment for recognizing and using recursion; no forced social framing.",
+      "files": []
+    }
+  ]
+}

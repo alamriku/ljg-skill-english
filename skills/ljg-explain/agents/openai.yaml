@@ -1,0 +1,4 @@
+interface:
+  display_name: "ljg-explain"
+  short_description: "Explains concepts, formulas and principles in plain English so the reader can recognize, derive and transfer the judgment"
+  default_prompt: "Use $ljg-explain to explain this topic clearly and thoroughly, with contrasts, the conditions under which it holds, and a transfer example."

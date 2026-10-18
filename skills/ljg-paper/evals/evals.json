@@ -1,0 +1,170 @@
+{
+  "skill_name": "ljg-paper",
+  "format_version": 3,
+  "note": "Placeholder sources in the generic cases must be bound before a run; case 10 is already bound to a real body-text comparison. Listing a case does not mean it has been run or passed; behavioural evidence comes from the actual answers of an independent evaluation.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use ljg-paper to read this method paper <source_path> and save the Org note and the paper-map.",
+      "expected_output": "The reader understands the research question, the new method, the comparison conditions and the limits of the conclusion.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "the first two sections state the research question and the main contribution",
+        "it explains how the key steps change the result",
+        "it keeps the comparison conditions and counterexamples that affect the conclusion",
+        "with a unified mechanism, an independent reader can use it to explain two different findings; without one, the relations are explained separately",
+        "the necessary roles and actions are distinguished before the method's rules are explained; the example shows conditions, actions and consequences"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Read this paper proposing a new benchmark <source_path> and save the Org note and the paper-map.",
+      "expected_output": "It says what the new benchmark separates and which causes remain unexplained.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "it separates a measurement contribution from a causal explanation",
+        "it says which difference the old metric missed",
+        "necessary supplementary comparisons are kept by what they tell us",
+        "leaderboard performance is not equated with real-world capability",
+        "it states what is measured and how the comparison works, without relying on the evaluator to supply field background"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Read this theoretical paper <source_path> and save the Org note and the paper-map.",
+      "expected_output": "It explains the assumptions, the relations, the different inferences and the conditions of application.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "where there is no comparative experiment, it states the form of argument honestly",
+        "with a unified mechanism, it uses it to explain two different findings",
+        "it separates predictions about changed conditions from validated conclusions",
+        "it invents no mechanism for material that lacks a unified explanation",
+        "concepts and assumptions needed to follow the inference are explained in place, with no forced story opening or experiment structure"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Read this system or resource paper <source_path> and save the Org note and the paper-map.",
+      "expected_output": "It states the new capability, the key components, and the cost, speed or scale limits.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "it states the actual contribution and what prior work lacked",
+        "it keeps several performance and cost comparisons as needed",
+        "it explains what different information each comparison provides",
+        "an engineering contribution is not inflated into a general theory"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Read this paper with several research questions <source_path> and save the Org note and the paper-map.",
+      "expected_output": "Every necessary thread is covered, and cases may change while independent experiments sit side by side.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "the research record covers every necessary thread and its evidential status",
+        "the body explains how the threads connect",
+        "where sections can be swapped, it says they are parallel",
+        "no causal link is invented to manufacture progression",
+        "cases with similar jobs may coexist when they provide different information"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Rewrite the old draft <draft_path> against the original paper <source_path>. The reader says they cannot tell what the paper studies or what the authors did.",
+      "expected_output": "The research question, the main contribution and the explanatory process are restored in place.",
+      "files": [
+        "<draft_path>",
+        "<source_path>"
+      ],
+      "assertions": [
+        "the original file, source and identifier are preserved",
+        "missing content is supplied before the wording is polished",
+        "it uses plain language and completes the subject, verb and object relations",
+        "the body is not organized around the research record's field names"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Rewrite the old draft <draft_path> against the original paper <source_path>. The reader can only remember a string of scores and cannot say why the experiments were run that way.",
+      "expected_output": "The content is reorganized by what the evidence does, and the reader understands the reasons behind the results.",
+      "files": [
+        "<draft_path>",
+        "<source_path>"
+      ],
+      "assertions": [
+        "the check is not evaded by splitting paragraphs or spelling numbers out in words",
+        "necessary differences and counterexamples are kept, with no forced single kind of result",
+        "the script's number hint does not by itself judge the quality of the writing",
+        "if the independent reading check still only recites scores, it fails"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Explain this paper <source_path> directly, without saving any file.",
+      "expected_output": "It stays within the scope of a spoken explanation and still gives the contribution, the change of understanding, the reasons behind the results and the limits.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "it does not require generating the Org note or the paper-map",
+        "it runs no file checks and fabricates no passing result",
+        "digits inside a method name do not affect the whole-text paraphrase check",
+        "when no independent evaluation is possible, it says so honestly"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Read this observational study with no unified mechanism <source_path> and save the Org note and the paper-map.",
+      "expected_output": "It explains the different findings and their relations, preserving the distinction between correlation and causation.",
+      "files": [
+        "<source_path>"
+      ],
+      "assertions": [
+        "it forces neither a dramatic reversal nor a unified formula",
+        "it says how the findings jointly form the contribution",
+        "invented examples are naturally distinguished from the paper's experiments",
+        "source verification and the four independent reading checks are kept"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Assess how self-sufficient the two same-source paper readings in plain-language-pair.json are for a reader with no field background. The evaluator receives only reader and candidates, with expected, the version order and past feedback hidden; paraphrase one actual process for each and map it onto the paper's roles, then choose the more understandable one and quote specific sentences for the reason.",
+      "expected_output": "It can tell a paraphrase of jargon apart from an imaginable course of action, and can check whether an everyday scene preserves the paper's identity; it compares from the actual post-reading answers rather than voting by a preset label.",
+      "files": [
+        "plain-language-pair.json"
+      ],
+      "assertions": [
+        "expected, the version order and past feedback stay hidden during assessment; only the target reader and the candidate bodies are provided",
+        "one actual process is paraphrased for each and mapped onto the paper's objects, rather than judging plainness by term count or labels",
+        "it quotes the sentences that require field knowledge and names the missing role, purpose or connection",
+        "the paper's contribution and boundaries are preserved, and a fluent everyday story does not pass automatically",
+        "a missing necessary premise is a NARRATIVE_FAIL even when the evaluator could paraphrase from their own knowledge",
+        "an independent comparison is not proof that a real non-specialist understood it; later user feedback can overturn the automatic verdict"
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Use ljg-paper to explain the original paper at https://arxiv.org/abs/2307.03172v3 directly, without saving a user note. At evaluation time supply the full PDF or an identical full text; save the body temporarily for an independent trial reading.",
+      "files": [],
+      "source_url": "https://arxiv.org/abs/2307.03172v3",
+      "source_pdf_sha256": "653b29619eae2ae4b361d7bdcdc06db4bedcb1b0eabe31814036beca8c1af0b1",
+      "expected_output": "Without relying on an earlier paper's scene or conclusions, it explains this benchmark paper with the current skill, and an independent reader can paraphrase the actual experiment, the findings and the limits.",
+      "assertions": [
+        "field objects and actions appearing for the first time are explained for an ordinary reader",
+        "both task threads and the important comparisons each do a job, rather than reciting an overall score",
+        "measurement findings stay distinct from causal explanation, with no manufactured unified mechanism",
+        "no story is forced; the actual process and the scope of the conclusion can be explained",
+        "the independent evaluation reads only the generated body, source checking happens separately, and no PASS is pre-filled before a run"
+      ]
+    }
+  ]
+}

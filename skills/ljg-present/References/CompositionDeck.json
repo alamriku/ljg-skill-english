@@ -1,0 +1,360 @@
+{
+  "title": "Verify first, then use",
+  "subtitle": "Composition reference - press N for notes",
+  "mode": "faithful",
+  "tags": [
+    "share"
+  ],
+  "sources": [
+    {
+      "id": "SRC-001",
+      "content": {
+        "kicker": "01",
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "What counts as done?"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-002",
+      "content": {
+        "lines": [
+          {
+            "chunks": [
+              {
+                "t": "The output is generated,"
+              }
+            ]
+          },
+          {
+            "chunks": [
+              {
+                "t": "the work is not finished."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "SRC-003",
+      "content": {
+        "chart": {
+          "kind": "compare",
+          "title": "Two different kinds of work",
+          "items": [
+            {
+              "label": "generate",
+              "text": "produce a candidate result"
+            },
+            {
+              "label": "verify",
+              "text": "let the result meet reality"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-004",
+      "content": {
+        "headline": "Feedback changes the next round",
+        "diagram": {
+          "columns": 31,
+          "rows": 7,
+          "nodes": [
+            {
+              "id": "input",
+              "label": "input",
+              "caption": "x",
+              "col": 3,
+              "row": 1
+            },
+            {
+              "id": "process",
+              "label": "process",
+              "caption": "f",
+              "col": 11,
+              "row": 1
+            },
+            {
+              "id": "output",
+              "label": "result",
+              "caption": "f(x)",
+              "col": 19,
+              "row": 1
+            },
+            {
+              "id": "evaluate",
+              "label": "evaluate",
+              "caption": "E",
+              "col": 27,
+              "row": 1
+            }
+          ],
+          "edges": [
+            {
+              "from": "input",
+              "to": "process"
+            },
+            {
+              "from": "process",
+              "to": "output"
+            },
+            {
+              "from": "output",
+              "to": "evaluate"
+            },
+            {
+              "from": "evaluate",
+              "to": "input",
+              "via": [
+                [
+                  27,
+                  5
+                ],
+                [
+                  3,
+                  5
+                ]
+              ],
+              "label": "feedback",
+              "at": [
+                18,
+                5
+              ]
+            },
+            {
+              "from": "evaluate",
+              "to": "process",
+              "via": [
+                [
+                  27,
+                  5
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "SRC-005",
+      "content": {
+        "headline": "Each judgment has its own kind of evidence",
+        "table": {
+          "header": true,
+          "rows": [
+            [
+              "what is observed",
+              "what it supports"
+            ],
+            [
+              "the file was saved",
+              "the artifact exists"
+            ],
+            [
+              "the content was checked",
+              "what was checked matches the grounds"
+            ],
+            [
+              "it works in actual use",
+              "the current use is supported"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "slides": [
+    {
+      "role": "chapter",
+      "kicker": "01",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "What counts as done?"
+            }
+          ]
+        }
+      ],
+      "notes": "A chapter pause. Let the question stand on its own first, then move into the difference between generating and verifying.",
+      "sourceIds": [
+        "SRC-001"
+      ]
+    },
+    {
+      "role": "statement",
+      "lines": [
+        {
+          "chunks": [
+            {
+              "t": "The output is generated,"
+            }
+          ]
+        },
+        {
+          "chunks": [
+            {
+              "t": "the work is not finished."
+            }
+          ]
+        }
+      ],
+      "notes": "Two lines form one judgment, so the role is explicitly statement; line count never turns it into a list.",
+      "sourceIds": [
+        "SRC-002"
+      ]
+    },
+    {
+      "role": "chart",
+      "chart": {
+        "kind": "compare",
+        "title": "Two different kinds of work",
+        "items": [
+          {
+            "label": "generate",
+            "text": "produce a candidate result"
+          },
+          {
+            "label": "verify",
+            "text": "let the result meet reality"
+          }
+        ]
+      },
+      "notes": "The comparison shares one question axis. No third summary line, so the claim is not repeated.",
+      "sourceIds": [
+        "SRC-003"
+      ]
+    },
+    {
+      "role": "chart",
+      "headline": "Feedback changes the next round",
+      "diagram": {
+        "columns": 31,
+        "rows": 7,
+        "nodes": [
+          {
+            "id": "input",
+            "label": "input",
+            "caption": "x",
+            "col": 3,
+            "row": 1
+          },
+          {
+            "id": "process",
+            "label": "process",
+            "caption": "f",
+            "col": 11,
+            "row": 1
+          },
+          {
+            "id": "output",
+            "label": "result",
+            "caption": "f(x)",
+            "col": 19,
+            "row": 1
+          },
+          {
+            "id": "evaluate",
+            "label": "evaluate",
+            "caption": "E",
+            "col": 27,
+            "row": 1
+          }
+        ],
+        "edges": [
+          {
+            "from": "input",
+            "to": "process"
+          },
+          {
+            "from": "process",
+            "to": "output"
+          },
+          {
+            "from": "output",
+            "to": "evaluate"
+          },
+          {
+            "from": "evaluate",
+            "to": "input",
+            "via": [
+              [
+                27,
+                5
+              ],
+              [
+                3,
+                5
+              ]
+            ],
+            "label": "feedback",
+            "at": [
+              18,
+              5
+            ]
+          },
+          {
+            "from": "evaluate",
+            "to": "process",
+            "via": [
+              [
+                27,
+                5
+              ],
+              [
+                11,
+                5
+              ]
+            ]
+          }
+        ]
+      },
+      "notes": "The connectors are drawn in Unicode. Node labels keep natural letter spacing and their glosses stay next to them. The loop returns to the input and the process.",
+      "sourceIds": [
+        "SRC-004"
+      ]
+    },
+    {
+      "role": "evidence",
+      "headline": "Each judgment has its own kind of evidence",
+      "table": {
+        "header": true,
+        "rows": [
+          [
+            "what is observed",
+            "what it supports"
+          ],
+          [
+            "the file was saved",
+            "the artifact exists"
+          ],
+          [
+            "the content was checked",
+            "what was checked matches the grounds"
+          ],
+          [
+            "it works in actual use",
+            "the current use is supported"
+          ]
+        ]
+      },
+      "notes": "A constructed qualitative example with no real business data. The table carries its own structure, with no outer frame, tabs or repeated conclusion.",
+      "sourceIds": [
+        "SRC-005"
+      ]
+    }
+  ]
+}

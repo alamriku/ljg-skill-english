@@ -1,0 +1,4 @@
+interface:
+  display_name: "ljg-mechanism - Mechanism research"
+  short_description: "Generates competing explanations for a phenomenon, verifies the key causal links against sources, and delivers a mechanism judgment with evidence and boundaries"
+  default_prompt: "Use $ljg-mechanism to study the phenomenon below, test the competing explanations against online sources, and give the best-supported mechanism and its boundary."

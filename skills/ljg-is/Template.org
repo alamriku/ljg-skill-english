@@ -1,0 +1,23 @@
+#+title: Understanding: {target}
+#+date: [{human-readable time}]
+#+identifier: {timestamp}
+#+filetags: :is:act:
+#+schema: ljg-is-v5
+#+definition: {plain language: which kind of thing X is, and the key difference from its neighbours}
+#+operation: {how X acts, and what changes as a result}
+#+recognition: {which common old judgment this understanding corrects}
+#+guidance: {facing X: what to look at first, how to judge, when to adjust}
+#+basis: {the factual basis stated directly in the material or verified this round}
+#+falsifier: {which fact would make the current explanation fail}
+
+* {a heading grown from the real confusion or the key distinction}
+
+{One to three paragraphs letting the reader see why this concept is easily misread, with the definition and its boundary in plain language. The concept appears early; no story used to withhold it.}
+
+* {a heading grown from the operation or the example}
+
+{Two to four paragraphs that make the concept move: what it takes in, what it does, what result it produces. The example stays close to the mechanism; write about choosers and counter-pressure only when the object really involves a man-made order.}
+
+* {a heading grown from the new judgment or the actual use}
+
+{One to three paragraphs on why the old judgment needs revising, then the observation, judgment or handle for action that follows from the mechanism. Handle the evidence boundary naturally; the ending may be a judgment, a principle or a real question.}
